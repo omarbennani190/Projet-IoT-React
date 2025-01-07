@@ -18,6 +18,6 @@ urlpatterns = [
     path('api/incidents/history/', IncidentHistoryView.as_view(), name='incident_history'),
     path('api/incidents/details/<int:incident_id>/', IncidentListView.as_view(), name='incident-detail'),  # Pour PUT
     
-    path('api/send_telegram_alert/', send_telegram_alert, name='send_telegram_alert'),
-    path('api/send_twilio_alert/', send_twilio_alert, name='send_twilio_alert'),
+    # path('api/send_telegram_alert/', send_telegram_alert, name='send_telegram_alert'),
+    # path('api/send_twilio_alert/', send_twilio_alert, name='send_twilio_alert'),
 ]
