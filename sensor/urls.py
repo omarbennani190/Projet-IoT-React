@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import IncidentHistoryView, IncidentListView, LastSensorDataView, SensorDataView, send_telegram_alert, send_twilio_alert
+from .views import IncidentHistoryView, IncidentListView, LastSensorDataView, SensorDataView
 from . import views
 
 urlpatterns = [
