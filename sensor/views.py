@@ -1,7 +1,6 @@
 import random
 import requests
 import telepot
-from sensor.views import send_telegram_alert
 from twilio.rest import Client
 from django.core.mail import send_mail
 from django.conf import settings
