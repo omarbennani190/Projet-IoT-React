@@ -1,0 +1,186 @@
+.app-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Styles pour la sidebar */
+.sidebar {
+  width: 240px; /* Largeur de la sidebar */
+  height: 100vh; /* Hauteur de la sidebar (100% de la hauteur de la page) */
+  background-color: #0a1229; /* Couleur de fond de la sidebar */
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Ombre légère pour la sidebar */
+}
+
+/* Styles pour le contenu principal */
+.main-content {
+  flex-grow: 1; /* Le contenu principal prend tout l'espace restant */
+  padding: 20px;
+  background-color: #f4f6f8; /* Couleur de fond du contenu principal */
+  overflow-y: auto; /* Permet de faire défiler le contenu si nécessaire */
+}
+
+.app-title {
+  color: #0a1229;
+  margin-bottom: 20px;
+}
+
+.sensor-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.submit-button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 20%;
+  align-self: center;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}
+
+.last-data {
+  margin: 20px 0;
+}
+
+.data-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.data-box {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  width: 320px;
+  background-color: #fff;
+}
+
+.data-box p {
+  margin: 5px 0;
+}
+
+.data-box p strong {
+  color: #555;
+}
+
+.icon-thermometer::before {
+  content: "🌡️";
+  font-size: 50px;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.icon-water-drop::before {
+  content: "💧";
+  font-size: 50px;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.temp-stats {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.no-data {
+  color: #888;
+}
+
+/* GraphModal */
+
+.icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  margin: 10px;
+}
+
+.graph-container {
+  padding: 5px;
+  text-align: center;
+}
+
+.graph {
+  background-color: #fcfbff;
+  padding: 5px;
+}
+
+.time-range-selector {
+  margin: 10px 0;
+}
+
+.time-range-selector select {
+  margin-left: 8px;
+  padding: 4px 8px;
+}
+
+.back-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}
+
+.calendar-selector {
+  gap: 10px;
+  display: inline-flex;
+  margin-bottom: 20px;
+}
+
+/* Télécharger CSV */
+.download-button {
+  margin-left: 155px;
+  background-color: #4CAF50; /* Vert */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.download-button:hover {
+  background-color: #45a049; /* Vert plus foncé */
+}
+
+/* Admin panel */
