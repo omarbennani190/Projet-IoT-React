@@ -1,6 +1,7 @@
 import random
 import requests
 import telepot
+from sensor.views import send_telegram_alert
 from twilio.rest import Client
 from django.core.mail import send_mail
 from django.conf import settings
@@ -203,6 +204,14 @@ def sendtele():
     bot.sendMessage(rece_id, 'la température depasse la normale')
     print(bot.sendMessage(rece_id, 'OK.'))
 
+def send_telegram_alert(message):
+    """
+    Envoie une alerte via Telegram.
+    :param message: Le message à envoyer.
+    """
+    bot = telepot.Bot('YOUR_TELEGRAM_BOT_TOKEN')
+    bot.sendMessage('CHAT_ID', message)
+    
 
 #************************************************************************************************
 #************************************************************************************************
