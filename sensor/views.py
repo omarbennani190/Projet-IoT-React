@@ -203,13 +203,13 @@ def sendtele():
     bot.sendMessage(rece_id, 'la température depasse la normale')
     print(bot.sendMessage(rece_id, 'OK.'))
 
-def send_telegram_alert(message):
-    """
-    Envoie une alerte via Telegram.
-    :param message: Le message à envoyer.
-    """
-    bot = telepot.Bot('YOUR_TELEGRAM_BOT_TOKEN')
-    bot.sendMessage('CHAT_ID', message)
+# def send_telegram_alert(message):
+#     """
+#     Envoie une alerte via Telegram.
+#     :param message: Le message à envoyer.
+#     """
+#     bot = telepot.Bot('YOUR_TELEGRAM_BOT_TOKEN')
+#     bot.sendMessage('CHAT_ID', message)
     
 
 #************************************************************************************************
