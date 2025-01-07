@@ -66,7 +66,8 @@ CORS_ALLOWED_ORIGINS = [
     "http://10.9.10.15:8000",   
     "https://projet-iot-react.vercel.app",
     "https://projet-iot-react.onrender.com",
-    "localhost"
+    "localhost:8000",
+    "127.0.0.1:8000"
 ]
 
 CORS_ALLOW_ALL_ORIGINS = True
